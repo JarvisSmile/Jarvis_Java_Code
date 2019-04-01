@@ -1,0 +1,28 @@
+package com.jarvis.base;
+
+import java.util.Scanner;
+import java.math.*;
+
+public class test_24_3 {
+
+	public static int getMax(int[] arr)
+	{
+		int max = arr[0];//定义变量
+		for (int x=1; x<arr.length; x++ )
+		{
+			if (arr[x]>max)
+			{
+				max = arr[x];
+			}
+		}
+		return max;
+		}
+	public static void main(String[] args) {
+		int a[]=new int[10];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<10;i++)
+			a[i]=sc.nextInt();
+		
+		System.out.print(getMax(a));
+	}
+}
