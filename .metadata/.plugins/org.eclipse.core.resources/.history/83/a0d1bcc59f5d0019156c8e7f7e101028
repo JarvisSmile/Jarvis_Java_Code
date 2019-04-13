@@ -1,0 +1,12 @@
+package com.hugeyurt.object;
+
+public class Circle {
+	private Point position=new Point();
+	private double r;
+	
+	public double Area()
+	{
+		
+	}
+	
+}

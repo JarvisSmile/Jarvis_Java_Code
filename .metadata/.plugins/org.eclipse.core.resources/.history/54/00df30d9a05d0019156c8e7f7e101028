@@ -1,0 +1,39 @@
+package com.hugeyurt.object;
+
+public class Circle {
+	private Point position=new Point();
+	private double r;
+	
+	public Circle(Point P,double r)
+	{
+		this.position=P;
+		this.r=r;
+	}
+	
+	public Circle(double Angle,double Polar)
+	{
+		position.setAngleAndPolar(Angle, Polar);
+		
+	}
+	
+	public Point getPoint() 
+	{
+		return this.position;
+	}
+	
+	public double Area()
+	{
+		return Math.PI*this.r*this.r;
+	}
+	
+	public String Relationship(Circle C)
+	{
+		
+		if(this.position.distance(C.position)<this.r+C.r)
+			return "两圆相交";
+		else if(this.position.distance(C.position)==this.r+C.r)
+			return "两圆相切";
+		else
+			return "两圆相离";
+	}
+}

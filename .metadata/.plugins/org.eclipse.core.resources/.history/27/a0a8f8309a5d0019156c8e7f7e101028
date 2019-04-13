@@ -1,0 +1,7 @@
+package com.hugeyurt.object;
+
+public class PointDistance {
+	public PointDistance(Point P1,Point P2) {
+
+	}
+}

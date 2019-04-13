@@ -1,0 +1,11 @@
+package com.hugeyurt.object;
+
+public class Point 
+{
+	private double x;
+	private double y;
+	public Point()
+	{
+		System.out.print(123);
+	}
+}
