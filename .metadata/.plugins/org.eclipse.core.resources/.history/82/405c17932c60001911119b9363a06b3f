@@ -1,0 +1,6 @@
+package com.hugeyurt.homework;
+
+public class H01_13 {
+
+}
+/*13.	输入2个正整数m,n，求其最大公约数和最小公倍数。*/
