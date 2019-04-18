@@ -1,0 +1,22 @@
+package com.jarvis.base;
+
+public class aaa {
+	public static void swap(int a[]){    
+		//数组传递实现交换两个整数
+			int t;
+			t = a[0];
+			a[0] = a[1];
+			a[1] = t;
+				 
+				
+			}
+		public static void main(String args[]){
+		   
+		     int []a = new int[2];
+		     a[0] = 3;
+		     a[1] = 4;
+		     swap(a);
+		     System.out.println(a[0] + "\t" + a[1]);
+		}
+
+}

@@ -1,0 +1,35 @@
+package com.hugeyurt.homework;
+
+public class H04_BigIntegerClass 
+{
+	char []BI;
+	public H04_BigIntegerClass(String s)
+	{
+		this.BI=new char [s.length()];
+		this.BI=s.toCharArray();
+	}
+	public char[] getBI() {
+		return BI;
+	}
+	public void setBI(char[] bI) {
+		BI = bI;
+	}
+	public void add(String s2)
+	{
+		char []BI2=new char [s2.length()];
+		BI2=s2.toCharArray();
+		
+		for(int i=(BI2.length-1);i>0;i--)
+		{
+			if(((int) BI[i]+(int)BI2[i])<10)
+				BI[i]=(char)((int) BI[i]+(int)BI2[i]);
+			else if(((int) BI[i]+(int)BI2[i])>10)
+			{
+				BI[i]=(char)((int) BI[i]+(int)BI2[i]-10);
+				BI2[i-1]=(char)((int)BI2[i]+1);
+			}
+		}
+		for(int i=0;i<BI.length;i++)
+			System.out.print(BI[i]);
+	}
+}

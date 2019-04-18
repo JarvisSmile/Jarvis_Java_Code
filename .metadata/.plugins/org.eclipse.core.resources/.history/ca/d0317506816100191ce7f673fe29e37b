@@ -1,0 +1,26 @@
+package com.jarvis.base;
+
+public class Worker {
+	private String name;
+	private char gender;
+	private static int empCount=0;
+	public Worker(String name,char gender) {
+		this.name=name;
+		this.gender=gender;
+		empCount++;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Worker [name=" + name + ", gender=" + gender + "]";
+	}
+	public static void main(String[] args) {
+	{
+		Worker emp1=new Worker("Jack",'M');
+	}
+}

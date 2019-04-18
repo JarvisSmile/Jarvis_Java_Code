@@ -1,0 +1,6 @@
+package com.jarvis.base;
+
+public class Worker {
+	private String name;
+	
+}

@@ -1,0 +1,20 @@
+package com.jarvis.base;
+
+public class aaa {
+	public static void Turn(int a ,int b)
+	{
+		int c;
+		c=a;
+		a=b;
+		b=c;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=1;
+		int b=2;
+		Turn(a,b);
+		System.out.println("a="+a+"B="+b);
+		
+	}
+
+}
