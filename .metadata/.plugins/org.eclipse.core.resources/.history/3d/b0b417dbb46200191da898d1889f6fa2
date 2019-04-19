@@ -133,18 +133,7 @@ public class H04_BigIntegerClass
 	public char []Sub(H04_BigIntegerClass s)
 	{
 		int []BI2=s.BI;
-		if(BI.length>BI2.length)
-		{
-			
-		}
-		else if(BI.length<BI2.length)
-		{
-			
-		}
-		else
-		{
-			
-		}
+		
 		return this.biginteger;
 	}
 }
