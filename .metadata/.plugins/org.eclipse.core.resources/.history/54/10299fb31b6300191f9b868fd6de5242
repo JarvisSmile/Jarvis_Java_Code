@@ -1,0 +1,18 @@
+package com.hugeyurt.linked;
+
+import java.util.Scanner;
+
+public class NodeApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+//		Node head=Node.CreatLinkedByTail(sc);
+//		Node.printLinked(head);
+		Node head=new Node();
+		//head.CreatLinkedByHead2(sc);
+		head.CreatLinkedByTail(sc);
+		head.printLinked();
+	}
+
+}
