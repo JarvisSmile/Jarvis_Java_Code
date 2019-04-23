@@ -1,6 +1,0 @@
-package com.hugeyurt.homework;
-
-public class H01_15 {
-
-}
-/*15.	输入x值，按照公式计算cos(x)的值，直到最后一项小于10-6为止。cos(x)=1-x^2/2!+x^4/4!- */

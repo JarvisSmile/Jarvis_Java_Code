@@ -1,8 +1,0 @@
-package com.jarvis.base;
-
-public class Worker {
-	private String name;
-	private String gender;
-	private static int empCount;
-	
-}
