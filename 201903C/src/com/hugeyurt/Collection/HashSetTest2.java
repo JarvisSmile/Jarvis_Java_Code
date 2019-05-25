@@ -3,10 +3,10 @@ package com.hugeyurt.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
-class R
+class R1
 {
 	int count;
-	public R(int i) {
+	public R1(int i) {
 		// TODO Auto-generated constructor stub
 		this.count=i;
 	}
@@ -34,17 +34,17 @@ public class HashSetTest2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashSet<R> hs=new HashSet<R>();
-		hs.add(new R(5));
-		hs.add(new R(-3));
-		hs.add(new R(9));
-		hs.add(new R(-2));
+		HashSet<R1> hs=new HashSet<R1>();
+		hs.add(new R1(5));
+		hs.add(new R1(-3));
+		hs.add(new R1(9));
+		hs.add(new R1(-2));
 		System.out.println(hs);
 		Iterator it=hs.iterator();
-		R first=(R)it.next();
+		R1 first=(R1)it.next();
 		first.count=-3;
 		System.out.println(hs);
-		hs.remove(new R(-3));
+		hs.remove(new R1(-3));
 		System.out.println(hs);
 		System.out.println("hs是否包含count为-3的R对象"+hs.contains(new R(-3)));
 		System.out.println("hs是否包含count为-2的R对象"+hs.contains(new R(-2)));
